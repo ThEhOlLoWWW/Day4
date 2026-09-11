@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+const tab1 = [1, 3, 5]
+const tab2 = [2, 4, 6]
+const tab3 = []
+
+while (tab1.length > 0 && tab2.length > 0){
+    if (tab1[0] > tab2[0]){
+        tab3.push(tab2.shift())
+    } else {
+        tab3.push(tab1.shift())
+    }
+}
+tab3.push(...tab2, ...tab1); 
+console.log(tab3);
+
