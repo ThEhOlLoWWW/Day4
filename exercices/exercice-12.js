@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function sansDoublons(tableau){
+    const cleanArr = []
+    for (let  i of tableau){
+        if (!cleanArr.includes(i)){
+            cleanArr.push(i);
+        }
+    }
+    return cleanArr;
+}
+const tab = [1, 2, 2, 3, 4, 4, 5]
+console.log(sansDoublons(tab));
