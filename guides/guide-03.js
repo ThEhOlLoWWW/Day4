@@ -9,4 +9,9 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+const file = ["Alice", "Bob", "Charlie"];
+
+file.shift();
+file.push("David");
+
+console.log(file);

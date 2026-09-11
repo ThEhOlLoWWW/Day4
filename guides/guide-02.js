@@ -10,3 +10,11 @@
 'use strict';
 
 // TODO: écris ta solution ici.
+
+const notes = [12, 15, 8, 19];
+let somme = 0;
+for( let note of notes) {
+    somme += note;
+}
+console.log(somme);
+
