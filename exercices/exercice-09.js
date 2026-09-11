@@ -14,4 +14,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function myFunc(tableau){
+    let nouveauTab = [];
+    for (let num of tableau){
+        if ( num % 2 === 0){
+            nouveauTab.push(num);
+        }
+    }
+    return nouveauTab;
+}
+const monTableau = [1, 2, 3, 4, 5, 6];
+console.log(myFunc(monTableau));
+
