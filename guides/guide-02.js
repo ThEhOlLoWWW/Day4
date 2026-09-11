@@ -16,5 +16,6 @@ let somme = 0;
 for( let note of notes) {
     somme += note;
 }
-console.log(somme);
+let moyenne = somme / notes.length;
+console.log(moyenne);
 
