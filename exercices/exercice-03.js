@@ -17,7 +17,7 @@
 
 const tableau = ['Amine', 'Sara', 'Yassine' ]
 
-tableau.shift('Amine');
+tableau.shift('');
 
 console.log(tableau);
 
