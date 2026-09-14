@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+const couleurs = ["Rouge", "Vert", "Bleu"];
+
+let pair = [];
+
+for (let pair1 of couleurs){
+    for (let pair2 of couleurs){
+        pair.push(`${pair1}-${pair2}`)
+    }
+}
+
+console.log(pair);
+
+ 
