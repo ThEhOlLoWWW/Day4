@@ -14,4 +14,20 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+const fruits = ["pomme", "banane", "pomme", "orange", "banane", "pomme"]
+
+function repetition(tab) {
+    let tracker = {};
+    for ( let item of tab) {
+        if ( tracker[item] === undefined ) {
+            tracker[item] = 1;
+        } else {
+            tracker[item]++ ;
+        }   
+    }
+    return tracker;
+}
+
+console.log(repetition(fruits));
+
