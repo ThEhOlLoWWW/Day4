@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+const bigArray = [[1, 2], [3, 4], [5, 6]];
+const goodArray = [];
+
+for ( let array of bigArray){
+    for (let num of array){
+        goodArray.push(num);
+    }
+}
+console.log(goodArray);
+
