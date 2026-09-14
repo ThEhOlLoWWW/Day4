@@ -19,4 +19,27 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+let panier = [101, 105, 101, 102];
+
+function ajouterAuPanier(id){
+    panier.push(id);
+}
+function retirerDuPanier(id){
+    panier = panier.filter(item => item != id)
+}
+function afficherQuantites(){
+    let counter = {}
+    for (let item of panier){
+        if (counter[item] == undefined){
+            counter[item] = 1
+        } else {
+            counter[item]++;
+        }
+    }
+    for ( let item in counter){
+        console.log(`Article: ${item}: ${counter[item]} exemplaires`);
+    }
+}
+afficherQuantites()
+

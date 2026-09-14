@@ -26,5 +26,6 @@ for (let pair1 of couleurs){
 }
 
 console.log(pair);
-
+const nom = "pola"
+ console.log("hello mu name is :" + nom);
  
