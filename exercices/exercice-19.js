@@ -14,4 +14,22 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+const arr = [10, 20, 30, 40, 45, 50, 60];
+const target = 45;
+
+let start = 0;
+let end = arr.length;
+
+while (start <= end) {
+    let mid = Math.floor((start + end)/2);
+
+    if ( target === arr[mid]) {
+        console.log(`Found ${target} at index ${mid}`);
+        break;
+    } else if (arr[mid] < target){
+        start = mid + 1;
+    } else {
+        end = mid - 1;
+    }
+}
