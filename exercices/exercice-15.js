@@ -21,11 +21,15 @@ const tab3 = []
 
 while (tab1.length > 0 && tab2.length > 0){
     if (tab1[0] > tab2[0]){
+
         tab3.push(tab2.shift())
     } else {
         tab3.push(tab1.shift())
+
+
     }
 }
 tab3.push(...tab2, ...tab1); 
+ 
 console.log(tab3);
 
